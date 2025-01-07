@@ -1,0 +1,156 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c1810;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Section 1 Styles */
+.section-1 {
+    padding: 4rem 0;
+    background-color: #f9f5f2;
+}
+
+.section-1 .container {
+    display: flex;
+    gap: 2rem;
+}
+
+.card {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    color: #2c1810;
+}
+
+/* Section 2 Styles */
+.section-2 {
+    height: 400px;
+}
+
+.parallax {
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('../img/our-signature-drinks.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax h2 {
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Section 3 Styles */
+.section-3 {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.location-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.location-info h3 {
+    color: #2c1810;
+    margin-bottom: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c1810;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .section-1 .container {
+        flex-direction: column;
+    }
+
+    .location-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .location-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
